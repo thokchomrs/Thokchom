@@ -1,0 +1,194 @@
+/* used to write the comments */
+/* we will have some common specification regarding color*/
+:root {
+  --primary-color: #17a2b8;
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* this is for "a" tag format  */
+
+a {
+  color: var(--primary-color);
+}
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px var(--primary-color);
+  width: 100%;
+  padding: 00.7rem 1rem;
+  top: 0;
+  opacity: 0.9;
+  position: fixed;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar a {
+  color: #ffffff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+.navbar a:hover {
+  color: var(--primary-color);
+}
+.bg-dark {
+  background-color: var(--dark-color);
+}
+/* body styles */
+
+body {
+  font-family: "Los Angeleno Grotesque", sans-serif;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #333;
+}
+.langding {
+  position: relative;
+  background: url(../images/showcase.jpg) no-repeat center;
+  width: 100%;
+  height: 100vh;
+}
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.langding-inner {
+  color: #ffffff;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+}
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.lead {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 00.45rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+.btn-primary {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+.tex-primary {
+  color: var(--primary-color);
+}
+
+.form .form-group {
+  margin: 1.2rem 0;
+}
+form {
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+.form input[type="submit"],
+button {
+  font: inherit;
+}
+
+.form .social-input {
+  display: flex;
+}
+
+.form .social-input i {
+  padding: 0.5rem;
+  width: 4rem;
+}
+
+.form .social-input i.fa-twitter {
+  color: #38a1f3;
+}
+.form .social-input i.fa-facebook {
+  color: #3b5998;
+}
+.form .social-input i.fa-instagram {
+  color: #3f729b;
+}
+.form .social-input i.fa-youtube {
+  color: #c4302b;
+}
+.form .social-input i.fa-linkedin {
+  color: #0077b5;
+}
+.profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  grid-gap: 2rem;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.btn-light,
+.bg-light,
+.badge-light,
+.alert-light {
+  background: var(--light-color);
+  color: #333;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: list-item;
+  text-align: match-parent;
+}
+.btn-danger,
+.bg-danger,
+.badge-danger,
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}

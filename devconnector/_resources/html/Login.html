@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Devconnector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/styles.css"
+    />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/los-angeleno-grotesque"
+      rel="stylesheet"
+    />
+    <script src="../js/main.js"></script>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="index.html"><i class="fas fa-code"></i> DevConnector</a>
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <section class="container">
+      <div class="alert alert-danger">Invalid credentials</div>
+      <h1 class="large text-primary">Sign In</h1>
+      <p class="lead"><i class="fas fa-user"></i> Sign into Your Account</p>
+      <form class="form" action="dashboard.html">
+        <div class="form-group">
+          <input
+            type="email"
+            placeholder="Email Address"
+            name="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" name="password" />
+        </div>
+        <input type="submit" class="btn btn-primary" value="Login" />
+      </form>
+      <p class="my-1">
+        Don't have an account? <a href="register.html">Sign Up</a>
+      </p>
+    </section>
+  </body>
+</html>
